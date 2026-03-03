@@ -1,0 +1,187 @@
+/* =========================
+   Color Palette (copy/paste)
+   Palette: "Calm Navy + Sand"
+   Primary (Navy):     #0B1F3B
+   Secondary (Teal):   #1F6F78
+   Accent (Gold):      #F4C95D
+   Light (Sand):       #F7F3E8
+   Card (White):       #FFFFFF
+   Text (Dark):        #102A43
+   Muted Text:         #486581
+   ========================= */
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Default font family */
+body {
+    font-family: "Source Sans 3", Arial, sans-serif;
+    background: #F7F3E8;
+    color: #102A43;
+    line-height: 1.6;
+}
+
+/* Headings font */
+h1,
+h2,
+h3 {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* 6a) Make h1 and h2 stand out */
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+/* Layout helpers */
+.container {
+    width: min(980px, 92%);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 2rem 1rem;
+    border-radius: 14px;
+    margin: 1.25rem 0;
+}
+
+/* 4c) Different background colors per major section */
+.site-header {
+    background: #0B1F3B;
+    /* header background */
+    color: #FFFFFF;
+    padding: 2.2rem 0;
+}
+
+.section-work {
+    background: #E9F5F6;
+    /* work experience background */
+}
+
+.section-education {
+    background: #FFF6DF;
+    /* education background */
+}
+
+.site-footer {
+    background: #1F6F78;
+    /* footer background */
+    color: #FFFFFF;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* Header layout */
+.header-content {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 3px solid #F4C95D;
+}
+
+.header-text h2 {
+    font-weight: 600;
+    color: #F4C95D;
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.site-header p {
+    max-width: 70ch;
+    margin-top: 0.75rem;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Cards inside sections */
+.card {
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 1.25rem 1.1rem;
+    box-shadow: 0 6px 18px rgba(16, 42, 67, 0.08);
+    margin-top: 1rem;
+}
+
+.meta {
+    color: #486581;
+    font-size: 0.98rem;
+}
+
+/* Optional list styling */
+.list-title {
+    margin-top: 0.85rem;
+    font-weight: 600;
+}
+
+ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+}
+
+li {
+    margin: 0.35rem 0;
+}
+
+/* Footer links */
+.site-footer h2 {
+    margin-bottom: 0.75rem;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+.copyright {
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 720px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 110px;
+        height: 110px;
+    }
+}
